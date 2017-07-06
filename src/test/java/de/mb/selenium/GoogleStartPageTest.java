@@ -58,7 +58,7 @@ public class GoogleStartPageTest {
 		assertTrue(bodyText != null);
 	}
 	@Test
-	public void pageBodyIsNotNull() throws MalformedURLException {
+	public void pageBodycontainsdevops() throws MalformedURLException {
 		String bodyText = driver.findElement(By.tagName("body")).getText();
 		assertTrue(bodyText.contains("DevOps"));
 	}
